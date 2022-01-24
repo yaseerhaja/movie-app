@@ -3,15 +3,13 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "build": "ng build -c=release --prod",
     "start": "node server/index.js",
-    "start-prod": "NODE_ENV=production PORT=5000 CONTEXT_PATH=/movie-app node server/index.js",
     "dev": "ng serve --proxy-config ./proxy.conf.json",
-    "build-prod": "ng build --prod --base-href=/movie-app/ --deploy-url=/movie-app/",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test",
+    "build": "ng build --prod",
+    "test": "ng test --code-coverage",
+    "lint": "ng lint",
     "node": "node server/index.js",
-    "heroku-postbuild": "ng build --configuration=production-heroku --prod"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
