@@ -14,9 +14,18 @@ import { MatInputModule } from '@angular/material/input';
 import { AppService } from './app.service';
 import { HttpClientModule } from '@angular/common/http';
 import { MovieCardComponent } from './components/movie-card/movie-card.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { HomeComponent } from './components/home/home.component';
+import { MovieDetailPageComponent } from './components/movie-detail-page/movie-detail-page.component';
 
 @NgModule({
-  declarations: [AppComponent, MovieCardComponent],
+  declarations: [
+    AppComponent,
+    MovieCardComponent,
+    PageNotFoundComponent,
+    HomeComponent,
+    MovieDetailPageComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,

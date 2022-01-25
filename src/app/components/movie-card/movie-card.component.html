@@ -1,10 +1,12 @@
-<mat-card>
-  <mat-card-title-group>
-    <mat-card-title>{{ movie?.Title }}</mat-card-title>
-    <mat-card-subtitle>{{ movie?.Type }}</mat-card-subtitle>
-    <img mat-card-xl-image [src]="movie?.Poster" />
-  </mat-card-title-group>
-  <mat-card-content>
-    {{ movie?.Year }}
-  </mat-card-content>
-</mat-card>
+<a [routerLink]="['/detail', movie?.imdbID, plotData]">
+  <mat-card>
+    <mat-card-title-group>
+      <mat-card-title>{{ movie?.Title }}</mat-card-title>
+      <mat-card-subtitle>{{ movie?.Type }}</mat-card-subtitle>
+      <img mat-card-xl-image [src]="movie?.Poster" />
+    </mat-card-title-group>
+    <mat-card-content>
+      {{ movie?.Year }}
+    </mat-card-content>
+  </mat-card>
+</a>

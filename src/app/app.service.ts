@@ -13,4 +13,10 @@ export class AppService {
       `api/movies/getMoviesByKey?key=${key}&plot=${plot}`
     );
   }
+
+  getMovieById(imdb: string | null, plot: string) {
+    return this.httpClient.get(
+      `api/movies/getMovieById?imdb=${imdb}&plot=${plot}`
+    );
+  }
 }

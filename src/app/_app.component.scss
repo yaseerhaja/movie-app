@@ -1,28 +1,2 @@
 .app-root {
-  form {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  .full-width {
-    width: 80%;
-    font-size: 20px;
-  }
-  label,
-  mat-radio-group,
-  input {
-    color: #fff;
-  }
-  mat-radio-button {
-    margin: 0 8px;
-  }
-  .flex-container {
-    display: grid;
-    display: -ms-grid;
-    grid-gap: 32px 24px;
-    margin: 16px 0;
-
-    -ms-grid-columns: 1fr 1fr 1fr 1fr;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
 }
