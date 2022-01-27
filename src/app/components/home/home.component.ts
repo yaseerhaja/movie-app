@@ -1,4 +1,4 @@
-import { Component, HostBinding, OnInit } from '@angular/core';
+import { Component, HostBinding, OnDestroy, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { MatRadioChange } from '@angular/material/radio';
 import { Subject, takeUntil } from 'rxjs';
@@ -9,7 +9,7 @@ import { MovieList } from 'src/app/app.types';
   selector: 'app-home',
   templateUrl: './home.component.html',
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit, OnDestroy {
   @HostBinding('class.app-home') ComponentClass = true;
   public myControl = new FormControl();
   public plotData = 'short';

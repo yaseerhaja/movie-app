@@ -1,4 +1,4 @@
-import { Component, HostBinding, OnInit } from '@angular/core';
+import { Component, HostBinding, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Subject, takeUntil } from 'rxjs';
 import { AppService } from 'src/app/app.service';
@@ -9,7 +9,7 @@ import { TruncatePipe } from 'src/app/pipe/truncate';
   selector: 'app-feature-page',
   templateUrl: './feature-page.component.html',
 })
-export class FeaturePageComponent implements OnInit {
+export class FeaturePageComponent implements OnInit, OnDestroy {
   @HostBinding('class.app-feature-page') ComponentClass = true;
   public movieDetails: MovieDetail | undefined;
 
