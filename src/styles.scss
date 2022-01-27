@@ -2,18 +2,19 @@
 
 html,
 body {
-  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
-  width: 960px;
   display: block;
   box-sizing: border-box;
-  margin: 0 auto;
   background: #000;
+  color: #fff;
 }
 
 @import "./app/app.component.scss";
 @import "./app/components/movie-card/movie-card.component.scss";
 @import "./app/components/home/home.component";
+@import "./app/components/feature-page/feature-page.component";

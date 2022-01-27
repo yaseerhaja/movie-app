@@ -1,0 +1,50 @@
+<div class="flex-container">
+  <div class="flex-item">
+    <mat-card>
+      <mat-card-title-group>
+        <mat-card-title>{{ movieDetails?.Title }}</mat-card-title>
+        <mat-card-subtitle>{{ movieDetails?.Type }}</mat-card-subtitle>
+      </mat-card-title-group>
+      <mat-card-content>
+        <label> Description : </label>
+        <span>{{ movieDetails?.Plot }}</span>
+      </mat-card-content>
+      <mat-card-content>
+        <label> Director : </label>
+        <span>{{ movieDetails?.Director }}</span>
+      </mat-card-content>
+      <mat-card-content>
+        <label> Year : </label> <span>{{ movieDetails?.Year }}</span>
+      </mat-card-content>
+
+      <mat-card-content>
+        <label> Awards : </label>
+        <span>{{ movieDetails?.Awards }}</span>
+      </mat-card-content>
+
+      <mat-card-content>
+        <label> Genre : </label>
+        <span>{{ movieDetails?.Genre }}</span>
+      </mat-card-content>
+      <mat-card-content>
+        <label> Language : </label>
+        <span>{{ movieDetails?.Language }}</span>
+      </mat-card-content>
+      <mat-card-content>
+        <label> Runtime : </label>
+        <span>{{ movieDetails?.Runtime }}</span>
+      </mat-card-content>
+      <mat-card-content>
+        <label> imdbRating : </label>
+        <span>{{ movieDetails?.imdbRating }}</span>
+      </mat-card-content>
+      <mat-card-content>
+        <label> imdbVotes : </label>
+        <span>{{ movieDetails?.imdbVotes }}</span>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div class="flex-item">
+    <img [src]="movieDetails?.Poster" />
+  </div>
+</div>

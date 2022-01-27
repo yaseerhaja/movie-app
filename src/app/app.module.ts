@@ -16,7 +16,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { MovieCardComponent } from './components/movie-card/movie-card.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { HomeComponent } from './components/home/home.component';
-import { MovieDetailPageComponent } from './components/movie-detail-page/movie-detail-page.component';
+import { FeaturePageComponent } from './components/feature-page/feature-page.component';
+import { TruncatePipe } from './pipe/truncate';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { MovieDetailPageComponent } from './components/movie-detail-page/movie-d
     MovieCardComponent,
     PageNotFoundComponent,
     HomeComponent,
-    MovieDetailPageComponent,
+    FeaturePageComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,7 +39,7 @@ import { MovieDetailPageComponent } from './components/movie-detail-page/movie-d
     MatRadioModule,
     MatCardModule,
   ],
-  providers: [AppService],
+  providers: [AppService, TruncatePipe],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

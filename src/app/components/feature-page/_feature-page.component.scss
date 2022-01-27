@@ -1,0 +1,51 @@
+.app-feature-page {
+  display: block;
+  margin: 100px;
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+
+    .flex-item {
+      flex-grow: 1;
+      margin: 0 16px 0 0;
+    }
+
+    .hide {
+      display: none;
+    }
+  }
+  mat-card-content {
+    margin-bottom: 24px;
+    label {
+      display: block;
+      font-size: 17px;
+      color: #98b88c;
+    }
+    span {
+      margin: 4px 0px;
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 1920px) {
+}
+
+@media (max-width: 1280px) {
+}
+
+@media (max-width: 640px) {
+  .app-feature-page {
+    margin: 20px;
+
+    .flex-container {
+      flex-flow: column-reverse;
+
+      .flex-item {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 16px;
+      }
+    }
+  }
+}

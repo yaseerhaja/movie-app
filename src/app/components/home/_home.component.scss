@@ -1,4 +1,6 @@
 .app-home {
+  margin: 20px 0;
+  display: block;
   form {
     display: flex;
     justify-content: flex-start;
@@ -24,5 +26,21 @@
 
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 1920px) {
+}
+
+@media (max-width: 1280px) {
+}
+
+@media (max-width: 640px) {
+  .app-home {
+    margin: 20px;
+
+    .flex-container {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
   }
 }
